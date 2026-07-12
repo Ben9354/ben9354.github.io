@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- basic page setup -->
+  <!-- main portfolio page -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BC | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- top nav -->
+  <nav>
+    <a class="logo" href="index.html">BC</a>
+    <div>
+       <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+    </div>
+  </nav>
+
+
+  
+  <!-- hero / landing section -->
+  <header class="hero">
+    <h1>BUILDING PROJECTS<br>THAT MOVE</h1>
+    <p class="subtext">"If you're going to do something, do it properly."</p>
+
+    <div class="hero-buttons">
+      <a href="resume.pdf" class="button secondary-button" download>Download Resume</a>
+    </div>
+  </header>
+
+  
+  <!-- about section -->
+  <section id="about" class="about">
+    <div class="about-layout">
+      <div class="about-text">
+        <h2>About</h2>
+        <p>
+          Hi! I'm Benjamin Chung, a 4th year student at UBC studying Electrical Engineering. 
+        </p>
+        
+        <p>
+          I previously have 16 months of co-op experience in the utilities and construction industry.
+          After initially pursuing the power and infrastructure field, I realized this field was not the direction I wanted to continue with.
+        </p>
+
+        <p>
+          After returning to school to finish a third-year project course, I rediscovered my interest in embedded systems,
+          hardware, and software development. This has helped me realize my long-term goals are better aligned in these fields, and I am now subsequently looking for a co-op role in these fields.
+        </p>
+
+        <p>
+          Outside of schoolwork, my main hobbies are boxing/kickboxing, hiking, and volleyball.
+        </p>
+      </div>
+
+      <div class="about-photo">
+        <img src="profile.jpg" alt="Benjamin Chung portrait" onload="this.parentElement.classList.add('has-photo')" onerror="this.style.display='none'">
+        <p>profile.jpg</p>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <a class="about-card contact-button" href="mailto:ben9354@gmail.com">
+        <h3>Email</h3>
+        <p>ben9354@gmail.com</p>
+      </a>
+
+      <a class="about-card contact-button" href="https://github.com/ben9354" target="_blank">
+        <h3>GitHub</h3>
+        <p>github.com/ben9354</p>
+      </a>
+
+      <a class="about-card contact-button" href="https://linkedin.com/in/benjchung" target="_blank">
+        <h3>LinkedIn</h3>
+        <p>linkedin.com/in/benjchung</p>
+      </a>
+    </div>
+  </section>
+
+  
+  <!-- work timeline -->
+  <section id="experience" class="experience timeline-vertical-style">
+    <div class="experience-inner">
+      <h2>Work Experience</h2>
+
+      <div class="timeline-vertical">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="timeline-date">Sep 2025 – May 2026</div>
+          <div class="timeline-card">
+            <h3>Junior Electrical Designer</h3>
+            <p class="company">Smith + Andersen</p>
+            <ul>
+              <li>Designed SLDs, power, and lighting layouts for tenant buildings using AutoCAD MEP, Revit, and Visual Lighting.</li>
+              <li>Wrote EPRs to support electrification of existing equipment and EV charging implementation.</li>
+              <li>Performed calculations to size feeders, circuit breakers, mechanical equipment, and panels according to BCBC and CEC.</li>
+            </ul>
+            <a class="read-more-link" href="work-smith-andersen.html">Read More</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="dot"></div>
+          <div class="timeline-date">Jan 2025 – Aug 2025</div>
+          <div class="timeline-card">
+            <h3>Airside Project Management</h3>
+            <p class="company">Vancouver Airport Authority (YVR)</p>
+            <ul>
+              <li>Supported YVR’s $170M <a href="https://news.yvr.ca/north-runway-modernization-program/" target="_blank">North Runway Program</a> through technical coordination, documentation, and stakeholder communication.</li>
+              <li>Created a master project tracker using P6 schedule data to track earned value and forecast completion dates.</li>
+              <li>Created a manual for YVR’s Airfield Lighting System and Power Distribution System with TP312 compliance standards.</li>
+            </ul>
+            <a class="read-more-link" href="work-yvr.html">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <!-- projects -->
+  <section id="projects" class="projects">
+    <h2 class="section-heading">Projects</h2>
+
+    <div class="project">
+      <span>01</span>
+
+      <div>
+        <div class="project-visual robot-visual">
+          <img class="project-image" src="project-self-balancing-robot.jpg" alt="Self-balancing robot project image" onload="this.parentElement.classList.add('has-project-image')" onerror="this.style.display='none'">
+          <p>project-self-balancing-robot.jpg</p>
+        </div>
+      </div>
+
+      <div>
+        <h2>Self-Balancing Robot</h2>
+        <p class="project-tools">C++ / Python / Control Systems / Electronics / Embedded Programming</p>
+        <ul class="project-points">
+          <li>Developed embedded C++ control software using a cascaded PID architecture.</li>
+          <li>Fine-tuned gyroscope, accelerometer, PID, encoder, and motor response values for precise balance control.</li>
+          <li>Integrated BLE connection with a Flutter mobile app to control robot movements.</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://drive.google.com/drive/folders/1sXyrJWSjCt3jf3mRxMlip21zSfRidqCU" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <span>02</span>
+
+      <div>
+        <div class="project-visual electronics-visual">
+          <img class="project-image" src="project-ipod-machine.jpg" alt="iPod machine FPGA project image" onload="this.parentElement.classList.add('has-project-image')" onerror="this.style.display='none'">
+          <p>project-ipod-machine.jpg</p>
+        </div>
+      </div>
+
+      <div>
+        <h2>iPod Machine with Volume Indicator</h2>
+        <p class="project-tools">SystemVerilog / SignalTap / Embedded Programming</p>
+        <ul class="project-points">
+          <li>Designed a keyboard-input FSM to control flash memory writes and synchronize flash memory reads.</li>
+          <li>Programmed an interrupt routine to sample and real-time filter audio data from flash memory.</li>
+          <li>Verified system functionality using waveform simulations and SignalTap.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project">
+      <span>03</span>
+
+      <div>
+        <div class="project-visual website-visual">
+          <img class="project-image" src="project-chat-room.jpg" alt="Chat room project image" onload="this.parentElement.classList.add('has-project-image')" onerror="this.style.display='none'">
+          <p>project-chat-room.jpg</p>
+        </div>
+      </div>
+
+      <div>
+        <h2>Chat Room</h2>
+        <p class="project-tools">Python / RTOS / TCP/IP</p>
+        <ul class="project-points">
+          <li>Built a multi-client and server-hosting TCP chat application using Python sockets.</li>
+          <li>Implemented disconnect detection, status broadcasts, socket cleanup, and mutex locking.</li>
+          <li>Preserved message order and reduced race conditions through synchronized message handling.</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/Ben9354/Chat-Room" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <span>04</span>
+
+      <div>
+        <div class="project-visual future-visual">
+          <img class="project-image" src="project-rc4-decryptor.jpg" alt="RC4 decryptor FPGA project image" onload="this.parentElement.classList.add('has-project-image')" onerror="this.style.display='none'">
+          <p>project-rc4-decryptor.jpg</p>
+        </div>
+      </div>
+
+      <div>
+        <h2>RC4 Brute-Force Message Decryptor</h2>
+        <p class="project-tools">SystemVerilog / SignalTap / FPGA</p>
+        <ul class="project-points">
+          <li>Designed a 16-state FSM decryptor with pipelined reads and a start-finish controller communication protocol.</li>
+          <li>Integrated RAM and ROM modules for key scheduling, ciphertext storage, and decrypted output writes.</li>
+          <li>Parallelized brute-force key search across four processing cores to accelerate search throughput.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- skills -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <p class="skills-intro">
+      Tools and technical areas I have worked with through projects, coursework, and co-ops:
+    </p>
+
+    <div class="skill-tags">
+      <span>Python</span>
+      <span>C/C++</span>
+      <span>Java</span>
+      <span>SystemVerilog</span>
+      <span>Assembly</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>MATLAB</span>
+      <span>LTSpice</span>
+      <span>Visual Studio</span>
+      <span>Git</span>
+      <span>AutoCAD</span>
+      <span>Revit</span>
+      <span>Quartus</span>
+      <span>SignalTap</span>
+      <span>MS365</span>
+      <span>Bluebeam</span>
+      <span>PID Control</span>
+      <span>TCP/IP</span>
+      <span>Embedded Systems</span>
+    </div>
+  </section>
+
+  <!-- footer -->
+<footer id="contact">
+    <p>ben9354@gmail.com</p>
+    <p class="footer-note">VENTION TENSION - "If you're going to do something, do it properly."</p>
+  </footer>
+</body>
+</html>
